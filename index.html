@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container" id="gameConsole">
+      <div class="game-views">
+        <div class="welcome-pg" id="firstpage">
+          <p>Welcome!</p>
+          <h1>MAGIC NUMBER!</h1>
+          <button id="btn-start">Start Game</button>
+        </div>
+        <div id="full-screen">
+          <div id="congrats">
+            <img src="images/confetti.gif" />
+          </div>
+          <div class="game-layout">
+            <h1>MAGIC NUMBER!</h1>
+            <div class="feedback-grounds" id="instruct-bg">
+              <p id="instruction">Numbers between 1 and 20</p>
+            </div>
+
+            <h3 id="commentary">Find the magic number...</h3>
+            <input
+              type="number"
+              id="guessNum"
+              placeholder="Enter a guess number"
+              inputmode="numeric"
+            />
+            <div class="game-grounds">
+              <button class="click-btn" id="playbtn">Play</button>
+              <button class="click-btn2" id="resetbtn">Restart</button>
+            </div>
+          </div>
+          <div class="score-board">
+            <h4>
+              Score:
+              <span id="score">10</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
